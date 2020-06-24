@@ -4,6 +4,10 @@ export const useForm = ( initialState = {} ) => {
 
     const [formValues, setFormValues] = useState(initialState)
 
+    const reset = () => {
+        setFormValues(initialState);
+    }
+
     const hadleInputChange = ({ target }) => {
         // console.log(e.target.name);
         setFormValues({
@@ -12,6 +16,6 @@ export const useForm = ( initialState = {} ) => {
         });
     }
 
-    return [formValues, hadleInputChange];
+    return [formValues, hadleInputChange, reset];
 
 }

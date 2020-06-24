@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { TodoApp } from './components/07-useReducer/TodoApp';
 // import { HooksApp } from './HooksApp';
 // import { CounterApp } from './components/01-useState/CounterApp';
 // import { CounterWithHook } from './components/01-useState/CounterWithHook';
@@ -12,9 +13,11 @@ import ReactDOM from 'react-dom';
 // import { Memorize } from './components/06-memos/Memorize';
 // import { MemoHook } from './components/06-memos/MemoHook';
 // import { CallbackHook } from './components/06-memos/CallbackHook';
-import { Padre } from './components/06-memos/Padre';
+// import { Padre } from './components/06-memos/Padre';
 ReactDOM.render(
-  <Padre/>,
+  <TodoApp/>,
   document.getElementById('root')
 );
+
+// import '../src/components/07-useReducer/IntroReducer.js';
 
